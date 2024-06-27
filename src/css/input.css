@@ -23,3 +23,14 @@
     font-family: "Roboto";
   }
 }
+
+/* Ховер для иконок */
+.main-icon:hover .change {
+  fill: black;
+  transition: fill .15s ease;
+}
+
+.nav-item:hover path {
+  transition: fill .15s ease;
+  fill: white;
+}

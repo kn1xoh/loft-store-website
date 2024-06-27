@@ -10,17 +10,6 @@ const newer = require("gulp-newer");
 const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 const htmlmin = require("gulp-htmlmin");
-const include = require("gulp-include");
-
-function pages() {
-  return src("src/pages/*.html")
-    .pipe(
-      include({
-        includePaths: "src/components",
-      })
-    )
-    .pipe(dest("src"));
-}
 
 function htmlCompress() {
   return src("src/*.html")
@@ -76,7 +65,6 @@ function watching() {
   watch(["src/img/src-img"], images);
   watch(["src/icons/src-icons"], icons);
   watch(["src/js/main.js"], scripts);
-  watch(["src/components/*", "src/pages/*"], pages);
 }
 
 function cleanDist() {
@@ -99,7 +87,6 @@ function building() {
   ).pipe(dest("dist"));
 }
 
-exports.pages = pages;
 exports.htmlCompress = htmlCompress;
 exports.images = images;
 exports.icons = icons;
@@ -108,4 +95,4 @@ exports.scripts = scripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, building, htmlCompress);
-exports.default = parallel(scripts, pages, watching);
+exports.default = parallel(scripts, watching);
