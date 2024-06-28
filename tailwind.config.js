@@ -11,7 +11,13 @@ module.exports = {
         "2xl": "198px",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: "'Roboto', sans-serif",
+        robotoCondensed: "'RobotoCondensed', sans-serif",
+        playfairDisplay: "'Playfair Display', sans-serif",
+      },
+    },
   },
   plugins: [],
 };
