@@ -9,9 +9,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
-<body>
+<body class="min-w-[320px] px-[15px] md:px-0">
     <header>
-        <div class=" bg-gray-800">
+        <div class="hidden bg-gray-800 lg:block">
             <div class="md:container md:mx-auto flex justify-between py-2.5 text-white mb-[20px]">
                 <ul class="flex gap-7">
                     <li><a href="#">Главная</a></li>
@@ -39,13 +39,20 @@
         </div>
 
         <!-- Блок с поиском -->
-        <div class="md:container md:mx-auto flex items-center mb-[20px]">
-            <img class="w-[170px] h-auto mr-[38px] flex-shrink-0" src="icons/logo.svg" alt="loft мебель лого">
-            <div class="flex items-center gap-[20px] h-[50px] w-full relative mr-[37px]">
-                <img class="w-[18px] h-auto absolute left-[15px]" src="icons/search.svg" aria-hidden="true" alt="">
-                <input class="w-full h-full pl-[50px] border border-solid border-gray-200 focus:outline-none cursor-text" type="search" placeholder="Поиск">
+        <div class="flex justify-between items-center pt-[28px] pb-[16px] md:container md:mx-auto md:mb-[20px]">
+            <div class="flex items-center lg:mr-[38px]">
+                <div class="flex flex-col gap-[4px] flex-shrink-0 mr-[18px] w-[20px] h-[11px] lg:hidden">
+                    <span class="block w-full h-[1px] bg-black"></span>
+                    <span class="block w-full h-[1px] bg-black"></span>
+                    <span class="block w-full h-[1px] bg-black"></span>
+                </div>
+                <img class="w-[100px] h-auto flex-shrink-0 mr-[40px] md:w-[113px] lg:w-[170px]" src="icons/logo.svg" alt="loft мебель лого">
             </div>
-            <div class="flex gap-[30px] flex-shrink-0">
+            <div class="hidden md:flex items-center gap-[20px] w-[243px] h-[40px] relative mr-[37px] lg:w-full lg:h-[50px]">
+                <img class="w-[18px] h-auto absolute left-[15px]" src="icons/search.svg" aria-hidden="true" alt="">
+                <input class="w-full h-full bg-gray-50 pl-[49px] lg:border md:border-solid lg:border-gray-200 focus:outline-none cursor-text" type="search" placeholder="Поиск">
+            </div>
+            <div class="flex gap-[20px] md:gap-[30px] flex-shrink-0">
                 <a href="#">
                     <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
@@ -69,8 +76,13 @@
             </div>
         </div>
 
+        <div class="relative flex items-center gap-[20px] w-full h-[40px] text-[14px] mb-[15px] md:hidden md:h-[50px] md:mr-[37px]">
+            <img class="absolute w-[15px] h-auto left-[15px] md:w-[18px]" src="icons/search.svg" aria-hidden="true" alt="">
+            <input class="w-full h-full bg-gray-50 pl-[49px] md:border md:border-solid md:border-gray-200 focus:outline-none cursor-text" type="search" placeholder="Поиск">
+        </div>
+
         <!-- Блок с навигацией -->
-        <div class="md:container md:mx-auto flex justify-center items-center mb-[30px]">
+        <div class="hidden md:container md:mx-auto xl:flex justify-center items-center mb-[30px]">
             <ul class="flex justify-center items-center w-full h-[70px] shadow-md">
                 <li class="nav-item flex items-center h-full relative">
                     <button class="nav-btn flex items-center gap-[10px] h-full px-[25px] hover:bg-gray-700 hover:text-white hover:transition" type="button">
@@ -203,23 +215,23 @@
     </header>
 
     <main>
-        <div class="md:container md:mx-auto flex justify-between">
+        <div class="pirm flex justify-between md:container md:mx-auto">
             <!-- Слайдер -->
             <div class="swiper select-none">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide relative">
                         <img class="absolute inset-0 -z-10" src="img/slider-img.jpg" alt="">
-                        <div class="pt-[100px] pl-[120px]">
-                            <h1 class="font-playfairDisplay font-bold uppercase text-[50px] leading-[1.05] tracking-[0.02em] text-[#3c3c3c] mb-[15px]">loft <br> мебель</h1>
-                            <h2 class="font-robotoCondensed leading-[1.41] tracking-[0.02em] mb-[20px]">Современная и удобная мебель в Анапе</h2>
-                            <a class="flex justify-center items-center w-[163px] h-[45px] bg-white font-robotoCondensed font-bold uppercase text-[12px] shadow-md" href="#"><span>Смотреть каталог</span></a>
+                        <div class="pt-[37px] pl-[15px] lg:pt-[100px] lg:pl-[120px]">
+                            <h1 class="font-playfairDisplay font-bold uppercase leading-[1.05] tracking-[0.02em] text-[#3c3c3c] mb-[5px] md:mb-[15px] md:text-[50px]">loft <br> мебель</h1>
+                            <h2 class="font-robotoCondensed text-[10px] leading-[1.41] tracking-[0.02em] mb-[20px] md:text-[16px]">Современная и&nbsp;удобная мебель</h2>
+                            <a class="hidden md:flex justify-center items-center w-[163px] h-[45px] bg-white font-robotoCondensed font-bold uppercase text-[12px] shadow-md" href="#"><span>Смотреть каталог</span></a>
                         </div>
                     </div>
                     <div class="swiper-slide"><img src="img/slider-img.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/slider-img.jpg" alt=""></div>
                 </div>
-                <img class="swiper-button-prev w-[30px] h-[30px] rotate-180" src="icons/swiper-btn.svg" width="30" height="30" alt="Пролистать направо">
-                <img class="swiper-button-next w-[30px] h-[30px]" src="icons/swiper-btn.svg" alt="Пролистать направо">
+                <img class="swiper-button-prev hidden w-[30px] h-[30px] rotate-180 lg:block" src="icons/swiper-btn.svg" width="30" height="30" alt="Пролистать направо">
+                <img class="swiper-button-next hidden w-[30px] h-[30px] lg:block" src="icons/swiper-btn.svg" alt="Пролистать направо">
             </div>
         </div>
     </main>
