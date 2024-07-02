@@ -26,3 +26,16 @@ const swiper = new Swiper(".swiper", {
   //   delay: 7000,
   // },
 });
+
+// Ховер для карточки продукта
+const productCard = document.querySelectorAll(".product-card");
+
+productCard.forEach((card) => {
+  card.addEventListener("mouseenter", function () {
+    this.querySelector(".poduct-hover").style.display = "block";
+  });
+
+  card.addEventListener("mouseleave", function () {
+    this.querySelector(".poduct-hover").style.display = "none";
+  });
+});

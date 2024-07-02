@@ -58,10 +58,6 @@
     font-display: swap;
     src: url("../fonts/PlayfairDisplay-Bold.woff2") format('woff2');
   }
-
-  html {
-    font-family: "Roboto";
-  }
 }
 
 /* Ховер для иконок */
@@ -73,9 +69,4 @@
 .nav-btn:hover path {
   transition: fill .15s ease;
   fill: white;
-}
-
-.swiper {
-  width: 1140px;
-  height: 450px;
 }
