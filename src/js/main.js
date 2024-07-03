@@ -30,12 +30,14 @@ const swiper = new Swiper(".swiper", {
 // Ховер для карточки продукта
 const productCard = document.querySelectorAll(".product-card");
 
-productCard.forEach((card) => {
-  card.addEventListener("mouseenter", function () {
-    this.querySelector(".poduct-hover").style.display = "block";
-  });
+if (window.innerWidth > 1280) {
+  productCard.forEach((card) => {
+    card.addEventListener("mouseenter", function () {
+      this.querySelector(".poduct-hover").style.display = "block";
+    });
 
-  card.addEventListener("mouseleave", function () {
-    this.querySelector(".poduct-hover").style.display = "none";
+    card.addEventListener("mouseleave", function () {
+      this.querySelector(".poduct-hover").style.display = "none";
+    });
   });
-});
+}

@@ -208,7 +208,7 @@
                             <path d="M1.63636 15C1.28491 15 1 14.7151 1 14.3636C1 14.0122 1.28491 13.7273 1.63636 13.7273C1.98782 13.7273 2.27273 14.0122 2.27273 14.3636C2.27273 14.7151 1.98782 15 1.63636 15Z" stroke="black" />
                         </svg>
                     </button>
-                    <ul class="nav-accordion-list w-max bg-white absolute top-[100%] left-0 shadow-md z-10 hidden">
+                    <ul class="nav-accordion-list w-max bg-white absolute top-[100%] right-0 shadow-md z-10 hidden">
                         <li class="hover:bg-gray-700 hover:text-white hover:transition"><a class="block p-[12px]" href="#">Новинки</a></li>
                         <li class="hover:bg-gray-700 hover:text-white hover:transition"><a class="block p-[12px]" href="#">Шкафы</a></li>
                         <li class="hover:bg-gray-700 hover:text-white hover:transition"><a class="block p-[12px]" href="#">Матрасы</a></li>
@@ -243,19 +243,23 @@
         <!-- Хиты продаж -->
         <section>
             <div class="md:container md:mx-auto">
-                <h3 class="mb-[35px]">Хиты продаж</h3>
-                <div class="grid grid-cols-4 gap-[30px]">
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="font-medium mb-[35px]">Хиты продаж</h3>
+                <div class="grid justify-center grid-cols-[repeat(auto-fit,_138px)] gap-[20px] md:gap-[30px] md:grid-cols-3 xl:grid-cols-4">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -276,17 +280,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-2.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -307,17 +315,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-3.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -338,17 +350,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-6.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -369,17 +385,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-5.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -400,17 +420,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-7.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -431,17 +455,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-8.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -462,17 +490,21 @@
                         </div>
                     </a>
 
-                    <a class="product-card relative block w-[263px] p-[20px] hover:shadow-lg" href="#">
-                        <button class="absolute top-[20px] right-[20px]" type="button">
-                            <svg class="main-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                 <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <img class="m-auto pt-[54px] mb-[54px]" src="img/product-9.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium mb-[6px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[11px] mb-[9px]">Барные стулья</div>
-                        <div class="font-medium">4 690₽</div>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -492,6 +524,42 @@
                             <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
                         </div>
                     </a>
+
+                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
+                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
+                            <div class="text-[10px] md:text-[12px]">-25%</div>
+                        </div>
+                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
+                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
+                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
+                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
+                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
+                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
+                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
+                            <div class="text-[12px] mb-[8px]">Размеры</div>
+                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
+                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
+                                    <div class="text-gray-400">ШИРИНА</div>
+                                    <div>43 СМ</div>
+                                </li>
+                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
+                                    <div class="text-gray-400">ГЛУБИНА</div>
+                                    <div>43 СМ</div>
+                                </li>
+                                <li>
+                                    <div class="text-gray-400">ВЫСОТА</div>
+                                    <div>43 СМ</div>
+                                </li>
+                            </ul>
+                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </section>
