@@ -41,3 +41,16 @@ if (window.innerWidth > 1280) {
     });
   });
 }
+
+// Бургер меню
+const burger = document.querySelector(".burger");
+const burgerMenu = document.querySelector(".burger-menu");
+const closeMenu = document.querySelector(".close-burger-menu");
+
+burger.addEventListener("click", function () {
+  burgerMenu.classList.add("burger-menu--active");
+});
+
+closeMenu.addEventListener("click", function () {
+  burgerMenu.classList.remove("burger-menu--active");
+});

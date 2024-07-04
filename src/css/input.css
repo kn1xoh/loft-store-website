@@ -70,3 +70,15 @@
   transition: fill .15s ease;
   fill: white;
 }
+
+/* Бургер меню */
+.burger-menu--active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Ховер для бургер меню */
+.burger-item:hover {
+  background: linear-gradient(90deg, #f1f1f1 0%, rgba(238, 246, 250, 0.19) 77.22%, rgba(237, 248, 252, 0) 100%);
+}
