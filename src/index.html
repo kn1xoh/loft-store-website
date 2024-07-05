@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loft Мебель</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -46,7 +46,7 @@
         <!-- Блок с поиском -->
         <div class="flex justify-between items-center pt-[28px] pb-[16px] md:container md:mx-auto md:mb-[20px]">
             <div class="flex items-center lg:mr-[38px]">
-                <div class="burger flex flex-col gap-[4px] flex-shrink-0 mr-[18px] w-[20px] h-[11px] lg:hidden">
+                <div class="burger flex flex-col gap-[4px] flex-shrink-0 cursor-pointer mr-[18px] w-[20px] h-[11px] lg:hidden">
                     <span class="block w-full h-[1px] bg-black"></span>
                     <span class="block w-full h-[1px] bg-black"></span>
                     <span class="block w-full h-[1px] bg-black"></span>
@@ -244,9 +244,11 @@
         <section class="pb-[30px]">
             <div class="md:container md:mx-auto">
                 <h3 class="font-medium mb-[35px]">Хиты продаж</h3>
-                <div class="grid justify-center grid-cols-[repeat(auto-fit,_138px)] gap-[20px] sm:gap-[30px] md:grid-cols-3 xl:grid-cols-4">
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
+                <div class="product-cards-wrapper grid justify-center grid-cols-[repeat(auto-fit,_138px)] gap-[20px] sm:gap-[30px] md:grid-cols-3 xl:grid-cols-4">
+                    <!-- Карточка -->
+                    <!--                     <div class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg">
+                        <a class="absolute inset-0" href="#" aria-label="открыть карточку товара"></a>
+                        <div class="product-sale flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
                             <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
                             <div class="text-[10px] md:text-[12px]">-25%</div>
                         </div>
@@ -259,7 +261,10 @@
                         <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
                         <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
                         <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
+                        <div class="flex items-center gap-[5px] md:gap-[8px]">
+                            <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
+                            <div class="product-sale-price font-medium text-[10px] text-gray-300 line-through md:text-[12px]">37 990₽</div>
+                        </div>
                         <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
                             <div class="text-[12px] mb-[8px]">Размеры</div>
                             <ul class="flex gap-[37px] text-[9px] mb-[17px]">
@@ -278,287 +283,7 @@
                             </ul>
                             <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
                         </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
-
-                    <a class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg" href="#">
-                        <div class="flex gap-[5px] absolute top-0 left-0 md:top-[20px] md:left-[15px] xl:left-[20px]">
-                            <img class="w-[14px] md:w-[17px]" src="icons/red-sale.svg" alt="скидка">
-                            <div class="text-[10px] md:text-[12px]">-25%</div>
-                        </div>
-                        <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
-                            <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
-                                <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-1.png" alt="" aria-hidden="true">
-                        <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">Толикс-2 White Gloss</h4>
-                        <div class="text-[10px] md:text-[11px] md:mb-[4px]">Барные стулья</div>
-                        <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">4 690₽</div>
-                        <div class="poduct-hover absolute left-0 hidden w-full bg-white p-[20px] pt-[15px] z-10 shadow-lg">
-                            <div class="text-[12px] mb-[8px]">Размеры</div>
-                            <ul class="flex gap-[37px] text-[9px] mb-[17px]">
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ШИРИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li class="relative after:content-['x'] after:absolute after:top-[7px] after:right-[-20px]">
-                                    <div class="text-gray-400">ГЛУБИНА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                                <li>
-                                    <div class="text-gray-400">ВЫСОТА</div>
-                                    <div>43 СМ</div>
-                                </li>
-                            </ul>
-                            <button class="flex justify-center items-center w-[223px] h-[40px] bg-slate-600" type="button"><span class="text-[17px] text-white">Добавить в корзину</span></button>
-                        </div>
-                    </a>
+                    </div> -->
 
                 </div>
             </div>
