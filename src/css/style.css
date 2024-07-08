@@ -642,6 +642,10 @@ video {
   visibility: hidden;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -684,6 +688,30 @@ video {
 
 .top-\[20px\] {
   top: 20px;
+}
+
+.left-\[20px\] {
+  left: 20px;
+}
+
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.right-\[20px\] {
+  right: 20px;
+}
+
+.right-\[-20px\] {
+  right: -20px;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[60px\] {
+  top: 60px;
 }
 
 .-z-10 {
@@ -750,6 +778,22 @@ video {
   margin-right: 40px;
 }
 
+.mr-\[30px\] {
+  margin-right: 30px;
+}
+
+.mr-\[20px\] {
+  margin-right: 20px;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
+.mb-\[90px\] {
+  margin-bottom: 90px;
+}
+
 .block {
   display: block;
 }
@@ -801,6 +845,22 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[354px\] {
+  height: 354px;
+}
+
+.h-\[14px\] {
+  height: 14px;
+}
+
+.h-\[90px\] {
+  height: 90px;
 }
 
 .w-\[100px\] {
@@ -864,6 +924,38 @@ video {
   width: max-content;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[6\] {
+  width: 6;
+}
+
+.w-\[653px\] {
+  width: 653px;
+}
+
+.w-\[9px\] {
+  width: 9px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[104px\] {
+  width: 104px;
+}
+
+.w-\[613px\] {
+  width: 613px;
+}
+
+.w-\[143px\] {
+  width: 143px;
+}
+
 .min-w-\[320px\] {
   min-width: 320px;
 }
@@ -894,6 +986,12 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .grid-cols-2 {
@@ -960,6 +1058,10 @@ video {
   gap: 5px;
 }
 
+.gap-\[25px\] {
+  gap: 25px;
+}
+
 .gap-x-\[35px\] {
   -moz-column-gap: 35px;
        column-gap: 35px;
@@ -971,6 +1073,10 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .bg-black {
@@ -996,6 +1102,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-\[12px\] {
@@ -1080,6 +1196,10 @@ video {
   padding-top: 50px;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1124,6 +1244,10 @@ video {
   font-size: 9px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1157,9 +1281,9 @@ video {
   color: rgb(60 60 60 / var(--tw-text-opacity));
 }
 
-.text-gray-200 {
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1177,9 +1301,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
+.text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -1311,8 +1435,68 @@ video {
   top: 7px;
 }
 
+.after\:bottom-0::after {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:bottom-2::after {
+  content: var(--tw-content);
+  bottom: 0.5rem;
+}
+
+.after\:bottom-\[2px\]::after {
+  content: var(--tw-content);
+  bottom: 2px;
+}
+
+.after\:bottom-\[1px\]::after {
+  content: var(--tw-content);
+  bottom: 1px;
+}
+
+.after\:bottom-\[0px\]::after {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:bottom-\[3px\]::after {
+  content: var(--tw-content);
+  bottom: 3px;
+}
+
+.after\:mr-\[10px\]::after {
+  content: var(--tw-content);
+  margin-right: 10px;
+}
+
+.after\:pl-\[10px\]::after {
+  content: var(--tw-content);
+  padding-left: 10px;
+}
+
+.after\:pl-\[9px\]::after {
+  content: var(--tw-content);
+  padding-left: 9px;
+}
+
+.after\:text-\[12px\]::after {
+  content: var(--tw-content);
+  font-size: 12px;
+}
+
 .after\:content-\[\'x\'\]::after {
   --tw-content: 'x';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\*\'\]::after {
+  --tw-content: '*';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\/\'\]::after {
+  --tw-content: '/';
   content: var(--tw-content);
 }
 
@@ -1442,14 +1626,6 @@ video {
 
   .md\:gap-\[30px\] {
     gap: 30px;
-  }
-
-  .md\:gap-\[5px\] {
-    gap: 5px;
-  }
-
-  .md\:gap-\[6px\] {
-    gap: 6px;
   }
 
   .md\:gap-\[8px\] {

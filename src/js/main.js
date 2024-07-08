@@ -17,7 +17,7 @@ navItem.forEach((item) => {
 });
 
 // Слайдер Swiper
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper--1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -25,6 +25,15 @@ const swiper = new Swiper(".swiper", {
   // autoplay: {
   //   delay: 7000,
   // },
+});
+
+// Слайдер Swiper
+const swiper2 = new Swiper(".swiper--2", {
+  slidesPerView: 5,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 // Бургер меню
