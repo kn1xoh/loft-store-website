@@ -82,3 +82,25 @@
 .burger-item:hover {
   background: linear-gradient(90deg, #f1f1f1 0%, rgba(238, 246, 250, 0.19) 77.22%, rgba(237, 248, 252, 0) 100%);
 }
+
+/* Ховер кнопки избранное */
+.favorites-btn:hover svg {
+  fill: black;
+  transition: fill .15s ease;
+}
+
+/* Сброс стандартных стрелок у input */
+.amount-input[type="number"]::-webkit-inner-spin-button, 
+.amount-input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.amount-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Слайдер в details.html */
+.details-slider div:not(:last-child) {
+  margin-right: 10px;
+}

@@ -29,7 +29,7 @@ const swiper = new Swiper(".swiper--1", {
 
 // Слайдер Swiper
 const swiper2 = new Swiper(".swiper--2", {
-  slidesPerView: 5,
+  slidesPerView: "auto",
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -145,3 +145,59 @@ if (window.innerWidth > 1280) {
     });
   });
 }
+
+// Аккордеон в details.html
+const detailsAccord = document.querySelectorAll(".details-accord");
+
+detailsAccord.forEach(function (accord) {
+  accord.addEventListener("click", function () {
+    // Скрывает все аккордионы
+    detailsAccord.forEach(function (accord) {
+      accord.nextElementSibling.style.display = "none";
+    });
+    // Расскрывает выбранный
+    this.nextElementSibling.style.display = "block";
+  });
+});
+
+// Убирает интерактив при клике вне аккордеонов
+const detailsAccord1 = document.querySelector(".details-accord--1");
+const detailsAccord2 = document.querySelector(".details-accord--2");
+const detailsAccord3 = document.querySelector(".details-accord--3");
+
+const accordList = document.querySelectorAll(".details-accord-list");
+
+document.addEventListener("click", (e) => {
+  const inAccord1 = e.composedPath().includes(detailsAccord1);
+  const inAccord2 = e.composedPath().includes(detailsAccord2);
+  const inAccord3 = e.composedPath().includes(detailsAccord3);
+
+  if (!inAccord1 && !inAccord2 && !inAccord3) {
+    accordList.forEach((list) => {
+      list.style.display = "none";
+    });
+  }
+});
+
+// Заменяет содержимое аккордеона при клике на его селекты
+const accordItem = document.querySelectorAll(".details-accord-item");
+
+accordItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    const list = this.closest(".details-accord-list");
+
+    list.previousElementSibling.querySelector(".details-accord-inner").innerHTML = this.innerHTML;
+
+    list.style.display = "none";
+  });
+});
+
+// Переключение картинок слайдера в details.html
+const sliderMainImg = document.querySelector(".slider-main-img");
+const sliderImg = document.querySelectorAll(".slider-img");
+
+sliderImg.forEach(function (img) {
+  img.addEventListener("click", function () {
+    sliderMainImg.innerHTML = this.innerHTML;
+  });
+});

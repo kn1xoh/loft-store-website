@@ -230,20 +230,23 @@
                 </ul>
 
                 <div class="flex gap-[30px]">
-                    <div>
-                        <div class="flex justify-center items-center w-[653px] h-[354px]">
+                    <div class="flex flex-col items-center">
+                        <div class="slider-main-img flex justify-center items-center w-[653px] h-[354px]">
                             <img class="object-cover" src="img/details-1.png" alt="" aria-hidden="true">
                         </div>
 
-                        <div class="relative w-[613px] h-[90px]">
-                            <div class="swiper swiper--2 static w-[613px] h-[90px]">
-                                <div class="swiper-wrapper flex gap-[10px]">
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img class="w-[104px] h-auto" src="img/details-2.png" alt="" aria-hidden="true"></div>
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img src="img/details-3.png" alt="" aria-hidden="true"></div>
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img src="img/details-4.png" alt="" aria-hidden="true"></div>
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img src="img/details-5.png" alt="" aria-hidden="true"></div>
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img src="img/details-2.png" alt="" aria-hidden="true"></div>
-                                    <div class="swiper-slide flex justify-center items-center w-[120px] h-[90px] cursor-pointer"><img src="img/details-3.png" alt="" aria-hidden="true"></div>
+                        <div class="relative w-[599px] h-[90px]">
+                            <div class="swiper swiper--2 static w-[599px] h-[90px] select-none">
+                                <div class="swiper-wrapper details-slider flex">
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-2.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-4.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-5.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-2.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
+                                    <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
                                 </div>
                                 <svg class="swiper-button-prev absolute left-[-20px] top-[60px] w-[9px] h-[14px]" width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.5 1L1.5 7L7.5 13" stroke="black" stroke-linecap="square" />
@@ -265,10 +268,10 @@
                         </svg>
                         <h1 class="font-medium text-[28px] mb-[5px]">Динс Velvet Yellow</h1>
                         <div class="text-[14px] text-gray-500 mb-[10px]">Диваны</div>
-                        <div class="flex">
+                        <div class="flex mb-[20px]">
                             <div class="font-medium text-[28px] mr-[30px]">4 690₽</div>
-                            <button class="flex justify-center items-center w-[143px] h-[40px] bg-gray-700 mr-[20px]"><span class="text-[13px] text-white">Купить</span></button>
-                            <button class="flex justify-center items-center">
+                            <button class="flex justify-center items-center w-[143px] h-[40px] bg-gray-700 mr-[20px] hover:bg-gray-600 transition-colors" type="button"><span class="text-[13px] text-white">Купить</span></button>
+                            <button class="favorites-btn flex justify-center items-center transition-all" type="button">
                                 <svg class="main-icon mr-[10px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                     <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
@@ -276,6 +279,47 @@
                                 <span class="text-[12px]">Добавить в желаемое</span>
                             </button>
                         </div>
+
+                        <!-- Аккордеоны -->
+                        <div class="flex gap-[25px] mb-[20px]">
+                            <div>
+                                <span class="block text-[12px] mb-[8px]">Цвет</span>
+                                <div class="details-accord details-accord--1 flex items-center gap-[10px] cursor-pointer">
+                                    <div class="details-accord-inner"><span class="block w-[30px] h-[30px] bg-amber-400 shadow-md"></span></div>
+                                    <img src="icons/accord.svg" alt="" aria-hidden="true">
+                                </div>
+                                <div class="details-accord-list absolute cursor-pointer z-10 hidden">
+                                    <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-amber-400 shadow-md"></span></div>
+                                    <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-yellow-900 shadow-md"></span></div>
+                                    <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-lime-900 shadow-md"></span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block text-[12px] mb-[8px]">Количество</span>
+                                <div class="details-accord details-accord--2 flex items-center gap-[10px] cursor-pointer">
+                                    <span class="details-accord-inner block font-medium w-[30px] h-[30px] px-[11px] py-[4px] shadow-md">1</span>
+                                    <img src="icons/accord.svg" alt="" aria-hidden="true">
+                                </div>
+                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 hidden">
+                                    <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">1</span>
+                                    <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">2</span>
+                                    <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">3</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block text-[12px] mb-[8px]">Размер (Д &times; Ш &times; В)</span>
+                                <div class="details-accord details-accord--3 flex items-center gap-[10px] cursor-pointer">
+                                    <span class="details-accord-inner block h-[30px] px-[10px] py-[4px] shadow-md">218&nbsp;СМ &times; 95&nbsp;СМ &times; 90&nbsp;СМ</span>
+                                    <img src="icons/accord.svg" alt="" aria-hidden="true">
+                                </div>
+                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 hidden">
+                                    <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">218&nbsp;СМ &times; 95&nbsp;СМ &times; 90&nbsp;СМ</span>
+                                    <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">118&nbsp;СМ &times; 85&nbsp;СМ &times; 80&nbsp;СМ</span>
+                                    <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">18&nbsp;СМ &times; 75&nbsp;СМ &times; 70&nbsp;СМ</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="text-[12px] mb-[10px]">Описание</div>
                         <p class="text-[12px] text-gray-500">Лаконичные линии и&nbsp;простые формы, безупречный стиль и&nbsp;индивидуальность&nbsp;&mdash; все это диван &laquo;Динс&raquo;. Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и&nbsp;функциональность, собранные воедино&nbsp;&mdash; &laquo;Динс&raquo; просто создан для размеренного отдыха в&nbsp;кругу семьи или компании друзей!</p>
                     </div>
