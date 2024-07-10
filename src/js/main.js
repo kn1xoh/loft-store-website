@@ -76,7 +76,7 @@ function renderCard(sale, imgNum, title, category, price, salePrice, width, dept
   }
 
   const card = `<div class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg">
-                    <a class="absolute inset-0" href="#" aria-label="открыть карточку товара"></a>
+                    <a class="product-link absolute inset-0" href="#" aria-label="открыть карточку товара"></a>
                     ${saleElem}
                     <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
                         <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ function renderCard(sale, imgNum, title, category, price, salePrice, width, dept
                         </svg>
                     </button>
                     <img class="w-[94px] m-auto pt-[25px] mb-[25px] md:w-[160px] md:pt-[67px] md:mb-[30px] xl:pt-[54px] xl:mb-[54px]" src="img/product-${imgNum}.png" alt="" aria-hidden="true">
-                    <h4 class="font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">${title}</h4>
+                    <h4 class="product-title font-medium text-[13px] md:text-[14px] md:mb-[3px] lg:text-[16px]">${title}</h4>
                     <div class="text-[10px] md:text-[11px] md:mb-[4px]">${category}</div>
                     <div class="flex items-center gap-[5px] md:gap-[8px]">
                         <div class="font-medium text-[13px] md:text-[14px] lg:text-[14px]">${price}₽</div>
@@ -151,12 +151,14 @@ const detailsAccord = document.querySelectorAll(".details-accord");
 
 detailsAccord.forEach(function (accord) {
   accord.addEventListener("click", function () {
-    // Скрывает все аккордионы
-    detailsAccord.forEach(function (accord) {
-      accord.nextElementSibling.style.display = "none";
-    });
-    // Расскрывает выбранный
-    this.nextElementSibling.style.display = "block";
+    if (this.nextElementSibling.style.display === "none") {
+      detailsAccord.forEach(function (accord) {
+        accord.nextElementSibling.style.display = "none";
+      });
+      this.nextElementSibling.style.display = "block";
+    } else {
+      this.nextElementSibling.style.display = "none";
+    }
   });
 });
 
@@ -164,7 +166,6 @@ detailsAccord.forEach(function (accord) {
 const detailsAccord1 = document.querySelector(".details-accord--1");
 const detailsAccord2 = document.querySelector(".details-accord--2");
 const detailsAccord3 = document.querySelector(".details-accord--3");
-
 const accordList = document.querySelectorAll(".details-accord-list");
 
 document.addEventListener("click", (e) => {
@@ -199,5 +200,14 @@ const sliderImg = document.querySelectorAll(".slider-img");
 sliderImg.forEach(function (img) {
   img.addEventListener("click", function () {
     sliderMainImg.innerHTML = this.innerHTML;
+  });
+});
+
+//
+const productLink = document.querySelectorAll(".product-link");
+
+productLink.forEach((link) => {
+  link.addEventListener("click", function () {
+    console.log(this.closest(".product-card").querySelector(".product-title").textContent);
   });
 });

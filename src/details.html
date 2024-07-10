@@ -221,7 +221,7 @@
 
     <main>
         <!-- Подробности товара -->
-        <section class="mb-[90px]">
+        <section class="mb-[40px] md:mb-[90px]">
             <div class="md:container md:mx-auto">
                 <ul class="flex gap-[25px] mb-[20px]">
                     <li class="relative after:content-['/'] after:absolute after:bottom-[2px] after:pl-[9px] after:text-[12px]"><a class="text-[12px] text-gray-400" href="#">Главная</a></li>
@@ -229,14 +229,14 @@
                     <li><a class="text-[12px] text-gray-400" href="#">Диваны</a></li>
                 </ul>
 
-                <div class="flex gap-[30px]">
+                <div class="flex flex-col gap-[30px] items-start xl:flex-row ">
                     <div class="flex flex-col items-center">
-                        <div class="slider-main-img flex justify-center items-center w-[653px] h-[354px]">
+                        <div class="slider-main-img flex justify-center items-center max-w-[400px] h-[220px] pr-[15px] md:max-w-full md:w-[645px] md:h-[354px]">
                             <img class="object-cover" src="img/details-1.png" alt="" aria-hidden="true">
                         </div>
 
-                        <div class="relative w-[599px] h-[90px]">
-                            <div class="swiper swiper--2 static w-[599px] h-[90px] select-none">
+                        <div class="relative w-screen md:w-[599px] md:h-[90px]">
+                            <div class="swiper swiper--2 static w-screen md:w-[599px] md:h-[90px] select-none">
                                 <div class="swiper-wrapper details-slider flex">
                                     <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-2.png" alt="" aria-hidden="true"></div>
                                     <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
@@ -248,10 +248,10 @@
                                     <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
                                     <div class="swiper-slide slider-img flex justify-center items-center w-[120px] h-[90px] p-[8px] cursor-pointer"><img class="object-cover" src="img/details-3.png" alt="" aria-hidden="true"></div>
                                 </div>
-                                <svg class="swiper-button-prev absolute left-[-20px] top-[60px] w-[9px] h-[14px]" width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="swiper-button-prev absolute left-[-20px] top-[60px] w-[9px] h-[14px] hidden md:block" width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.5 1L1.5 7L7.5 13" stroke="black" stroke-linecap="square" />
                                 </svg>
-                                <svg class="swiper-button-next absolute right-[-20px] top-[60px] w-[9px] h-[14px]" width=" 8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="swiper-button-next absolute right-[-20px] top-[60px] w-[9px] h-[14px] hidden md:block" width=" 8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 13L7 7L1 1" stroke="black" stroke-linecap="square" />
                                 </svg>
                             </div>
@@ -259,36 +259,36 @@
                     </div>
 
                     <div>
-                        <svg class="mb-[10px]" width="87" height="15" viewBox="0 0 87 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-[46px] mb-[5px] md:w-[87px] md:mb-[10px]" width="87" height="15" viewBox="0 0 87 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.94838 0.278719C7.86415 0.10805 7.69034 0 7.50001 0C7.30969 0 7.13587 0.10805 7.05165 0.278719L5.00476 4.42621L0.42816 5.09081C0.239806 5.11816 0.0833166 5.25008 0.0244934 5.43109C-0.0343298 5.6121 0.0147161 5.81081 0.151008 5.94366L3.46277 9.17185L2.68076 13.7306C2.64858 13.9182 2.72569 14.1078 2.87966 14.2196C3.03364 14.3315 3.23778 14.3463 3.40624 14.2577L7.50001 12.1054L11.5938 14.2577C11.7623 14.3463 11.9664 14.3315 12.1204 14.2196C12.2743 14.1078 12.3515 13.9182 12.3193 13.7306L11.5373 9.17185L14.849 5.94366C14.9853 5.81081 15.0344 5.6121 14.9755 5.43109C14.9167 5.25008 14.7602 5.11816 14.5719 5.09081L9.99527 4.42621L7.94838 0.278719Z" fill="black" />
                             <path d="M25.9484 0.278719C25.8642 0.10805 25.6903 0 25.5 0C25.3097 0 25.1359 0.10805 25.0516 0.278719L23.0048 4.42621L18.4282 5.09081C18.2398 5.11816 18.0833 5.25008 18.0245 5.43109C17.9657 5.6121 18.0147 5.81081 18.151 5.94366L21.4628 9.17185L20.6808 13.7306C20.6486 13.9182 20.7257 14.1078 20.8797 14.2196C21.0336 14.3315 21.2378 14.3463 21.4062 14.2577L25.5 12.1054L29.5938 14.2577C29.7623 14.3463 29.9664 14.3315 30.1204 14.2196C30.2743 14.1078 30.3515 13.9182 30.3193 13.7306L29.5373 9.17185L32.849 5.94366C32.9853 5.81081 33.0344 5.6121 32.9755 5.43109C32.9167 5.25008 32.7602 5.11816 32.5719 5.09081L27.9953 4.42621L25.9484 0.278719Z" fill="black" />
                             <path d="M43.9484 0.278719C43.8642 0.10805 43.6903 0 43.5 0C43.3097 0 43.1359 0.10805 43.0516 0.278719L41.0048 4.42621L36.4282 5.09081C36.2398 5.11816 36.0833 5.25008 36.0245 5.43109C35.9657 5.6121 36.0147 5.81081 36.151 5.94366L39.4628 9.17185L38.6808 13.7306C38.6486 13.9182 38.7257 14.1078 38.8797 14.2196C39.0336 14.3315 39.2378 14.3463 39.4062 14.2577L43.5 12.1054L47.5938 14.2577C47.7623 14.3463 47.9664 14.3315 48.1204 14.2196C48.2743 14.1078 48.3515 13.9182 48.3193 13.7306L47.5373 9.17185L50.849 5.94366C50.9853 5.81081 51.0344 5.6121 50.9755 5.43109C50.9167 5.25008 50.7602 5.11816 50.5719 5.09081L45.9953 4.42621L43.9484 0.278719Z" fill="black" />
                             <path d="M61.9484 0.278719C61.8642 0.10805 61.6903 0 61.5 0C61.3097 0 61.1359 0.10805 61.0516 0.278719L59.0048 4.42621L54.4282 5.09081C54.2398 5.11816 54.0833 5.25008 54.0245 5.43109C53.9657 5.6121 54.0147 5.81081 54.151 5.94366L57.4628 9.17185L56.6808 13.7306C56.6486 13.9182 56.7257 14.1078 56.8797 14.2196C57.0336 14.3315 57.2378 14.3463 57.4062 14.2577L61.5 12.1054L65.5938 14.2577C65.7623 14.3463 65.9664 14.3315 66.1204 14.2196C66.2743 14.1078 66.3515 13.9182 66.3193 13.7306L65.5373 9.17185L68.849 5.94366C68.9853 5.81081 69.0344 5.6121 68.9755 5.43109C68.9167 5.25008 68.7602 5.11816 68.5719 5.09081L63.9953 4.42621L61.9484 0.278719Z" fill="black" />
                             <path d="M79.9484 0.278719C79.8642 0.10805 79.6903 0 79.5 0C79.3097 0 79.1359 0.10805 79.0516 0.278719L77.0048 4.42621L72.4282 5.09081C72.2398 5.11816 72.0833 5.25008 72.0245 5.43109C71.9657 5.6121 72.0147 5.81081 72.151 5.94366L75.4628 9.17185L74.6808 13.7306C74.6486 13.9182 74.7257 14.1078 74.8797 14.2196C75.0336 14.3315 75.2378 14.3463 75.4062 14.2577L79.5 12.1054L83.5938 14.2577C83.7623 14.3463 83.9664 14.3315 84.1204 14.2196C84.2743 14.1078 84.3515 13.9182 84.3193 13.7306L83.5373 9.17185L86.849 5.94366C86.9853 5.81081 87.0344 5.6121 86.9755 5.43109C86.9167 5.25008 86.7602 5.11816 86.5719 5.09081L81.9953 4.42621L79.9484 0.278719Z" fill="#D1D1D1" />
                         </svg>
-                        <h1 class="font-medium text-[28px] mb-[5px]">Динс Velvet Yellow</h1>
-                        <div class="text-[14px] text-gray-500 mb-[10px]">Диваны</div>
-                        <div class="flex mb-[20px]">
-                            <div class="font-medium text-[28px] mr-[30px]">4 690₽</div>
-                            <button class="flex justify-center items-center w-[143px] h-[40px] bg-gray-700 mr-[20px] hover:bg-gray-600 transition-colors" type="button"><span class="text-[13px] text-white">Купить</span></button>
+                        <h1 class="font-medium text-[16px] mb-[5px] md:text-[28px]">Динс Velvet Yellow</h1>
+                        <div class="text-[9px] text-gray-500 mb-[10px] md:text-[14px]">Диваны</div>
+                        <div class="flex items-center mb-[20px]">
+                            <div class="font-medium text-[16px] mr-[30px] md:text-[28px]">4 690₽</div>
+                            <button class="flex justify-center items-center w-[100px] h-[32px] bg-gray-700 mr-[16px] md:w-[143px] md:h-[40px] md:mr-[20px] hover:bg-gray-600 transition-colors" type="button"><span class="text-[12px] text-white md:text-[13px]">Купить</span></button>
                             <button class="favorites-btn flex justify-center items-center transition-all" type="button">
-                                <svg class="main-icon mr-[10px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="main-icon w-[16px] mr-[10px] md:w-[22px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="change" d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" fill="white" />
                                     <path d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z" stroke="black" stroke-linejoin="round" />
                                 </svg>
-                                <span class="text-[12px]">Добавить в желаемое</span>
+                                <span class="text-[12px] hidden md:block">Добавить в желаемое</span>
                             </button>
                         </div>
 
                         <!-- Аккордеоны -->
-                        <div class="flex gap-[25px] mb-[20px]">
+                        <div class="flex flex-wrap gap-[25px] mb-[20px]">
                             <div>
                                 <span class="block text-[12px] mb-[8px]">Цвет</span>
                                 <div class="details-accord details-accord--1 flex items-center gap-[10px] cursor-pointer">
                                     <div class="details-accord-inner"><span class="block w-[30px] h-[30px] bg-amber-400 shadow-md"></span></div>
                                     <img src="icons/accord.svg" alt="" aria-hidden="true">
                                 </div>
-                                <div class="details-accord-list absolute cursor-pointer z-10 hidden">
+                                <div class="details-accord-list absolute cursor-pointer z-10 shadow-md" style="display: none;">
                                     <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-amber-400 shadow-md"></span></div>
                                     <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-yellow-900 shadow-md"></span></div>
                                     <div class="details-accord-item"><span class="block w-[30px] h-[30px] bg-lime-900 shadow-md"></span></div>
@@ -300,7 +300,7 @@
                                     <span class="details-accord-inner block font-medium w-[30px] h-[30px] px-[11px] py-[4px] shadow-md">1</span>
                                     <img src="icons/accord.svg" alt="" aria-hidden="true">
                                 </div>
-                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 hidden">
+                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 shadow-md" style="display: none;">
                                     <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">1</span>
                                     <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">2</span>
                                     <span class="details-accord-item block w-[30px] h-[30px] px-[11px] py-[4px]">3</span>
@@ -312,7 +312,7 @@
                                     <span class="details-accord-inner block h-[30px] px-[10px] py-[4px] shadow-md">218&nbsp;СМ &times; 95&nbsp;СМ &times; 90&nbsp;СМ</span>
                                     <img src="icons/accord.svg" alt="" aria-hidden="true">
                                 </div>
-                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 hidden">
+                                <div class="details-accord-list absolute bg-white cursor-pointer z-10 shadow-md" style="display: none;">
                                     <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">218&nbsp;СМ &times; 95&nbsp;СМ &times; 90&nbsp;СМ</span>
                                     <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">118&nbsp;СМ &times; 85&nbsp;СМ &times; 80&nbsp;СМ</span>
                                     <span class="details-accord-item block h-[30px] px-[10px] py-[4px]">18&nbsp;СМ &times; 75&nbsp;СМ &times; 70&nbsp;СМ</span>
