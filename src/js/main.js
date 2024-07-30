@@ -76,7 +76,7 @@ function renderCard(sale, imgNum, title, category, price, salePrice, width, dept
   }
 
   const card = `<div class="product-card relative block w-[138px] md:w-[220px] md:px-[15px] md:pb-[20px] xl:w-[263px] xl:p-[20px] xl:hover:shadow-lg">
-                    <a class="product-link absolute inset-0" href="#" aria-label="открыть карточку товара"></a>
+                    <a class="product-link absolute inset-0" href="details.html" aria-label="открыть карточку товара"></a>
                     ${saleElem}
                     <button class="absolute top-0 right-0 md:top-[20px] md:right-[6px] xl:right-[20px]" type="button">
                         <svg class="main-icon w-[14px] md:w-[18px]" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">

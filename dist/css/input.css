@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Roboto-Regular.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/Roboto-Medium.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Roboto-Bold.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/Roboto-Black.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'RobotoCondensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/RobotoCondensed-Regular.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'RobotoCondensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/RobotoCondensed-Bold.woff2") format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/PlayfairDisplay-Bold.woff2") format('woff2');
+  }
+}
+
+/* Ховер для иконок */
+.main-icon:hover .change {
+  fill: black;
+  transition: fill .15s ease;
+}
+
+.nav-btn:hover path {
+  transition: fill .15s ease;
+  fill: white;
+}
+
+/* Бургер меню */
+.burger-menu--active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Ховер для бургер меню */
+.burger-item:hover {
+  background: linear-gradient(90deg, #f1f1f1 0%, rgba(238, 246, 250, 0.19) 77.22%, rgba(237, 248, 252, 0) 100%);
+}
+
+/* Ховер кнопки избранное */
+.favorites-btn:hover svg {
+  fill: black;
+  transition: fill .15s ease;
+}
+
+/* Сброс стандартных стрелок у input */
+.amount-input[type="number"]::-webkit-inner-spin-button, 
+.amount-input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.amount-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Слайдер в details.html */
+.details-slider div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.details-accord-list--active {
+  display: block;
+}
